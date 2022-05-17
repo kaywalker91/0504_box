@@ -1,0 +1,81 @@
+/* CSS reset */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 패딩이나 마진을 키우더라도 박스크기가 커지는 걸 막을 수 있다 */
+}
+
+#box1
+{   
+    border-top: 10px solid rgb(20, 2, 2);
+    border-bottom: 10px solid #7a68b1;
+    background-color: #FFBBCC;
+    width: 200px;
+    height: 200px;
+     /* 1.상하여백 2.좌우여백 */
+     text-align: center;
+     line-height: 200px;
+}
+
+#box1:hover
+{   
+    border-style: double;
+    border-color: tomato;
+    border-width: 20px;
+    cursor: help;
+}
+
+#box2
+{   
+    border: 2px solid black;
+    background-color: #9977FF;
+    width: 8em;
+    height: 8em;
+    padding: 2em 4em;
+    margin: 30px 80px 50px 50px;
+     /* 상우하좌 여백*/
+}
+
+#box3
+{   
+    border: 3px solid black;
+    background-color: #7a68b1;
+    width: 8em;
+    height: 8em;
+}
+
+/* 인라인(글자취급)에 상하여백은 줄 수 없다 */
+
+#span1
+{
+    background-color: rgb(87, 161, 112);
+    margin-right: 30px;
+    vertical-align: -30px;
+    padding: 30px;
+}
+
+#span2
+{
+    background-color: rgb(233, 23, 23);
+    margin-right: 50px;
+}
+
+/* img,와 input은 인라인이나 사이즈 변경이 가능하다 */
+
+img
+{
+    display: block;
+    width: 10em;
+    height: 10em;
+}
+
+input
+{
+    display: block;
+    width: 10em;
+    height: 1.5em;
+    margin: 2em;
+}
+
